@@ -12,11 +12,8 @@ document.getElementById('section-wrapper').addEventListener('click', function(ev
         return;
     };
 
-
     // ** get The playerName
     const playerName = event.target.parentNode.children[0].innerText;
-
-   
     // ** ordered list get
     const orderedListField = document.getElementById('ordered-list');
 
@@ -27,7 +24,6 @@ document.getElementById('section-wrapper').addEventListener('click', function(ev
     li.innerHTML = `
         ${playerName}
     `;
-
     // ** logic for max 5 player add + button disabled functionality
     if(orderedListField.childElementCount === 5){
         alert('Maximum five players added');
@@ -46,6 +42,12 @@ document.getElementById('calculate').addEventListener('click',function(){
 
     const perPlayerExpense = getInputValue('per-player-budget');
 
+    // ** checking for is NaN and nagetive value input
+    if (isNaN(perPlayerExpense) || perPlayerExpense < 0) {
+        alert('Please enter a valid number as input')
+        return;
+    }
+
 
     // ** orderedlist
 
@@ -53,7 +55,6 @@ document.getElementById('calculate').addEventListener('click',function(){
 
     const numberOfPlayers = orderedListField.childElementCount;
 
-    console.log(numberOfPlayers)
 
     const totalPlayerExpense = perPlayerExpense * numberOfPlayers;
 
@@ -63,4 +64,6 @@ document.getElementById('calculate').addEventListener('click',function(){
 
 })
 
+
+// ** calculate total expense
 

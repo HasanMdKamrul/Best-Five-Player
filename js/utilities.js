@@ -2,7 +2,9 @@
 
 function getInputValue(inputId){
     const inputValue = parseFloat(document.getElementById(inputId).value);
+    
     return inputValue;
+  
 }
 
 // ** get innerText value
