@@ -25,13 +25,14 @@ document.getElementById('section-wrapper').addEventListener('click', function(ev
         ${playerName}
     `;
 
-    orderedListField.appendChild(li);
-
     console.log(orderedListField.childElementCount);
 
-    if(orderedListField.childElementCount > 5){
-        alert('no more add');
-        li.innerHTML = ''
+    if(orderedListField.childElementCount === 5){
+        alert('Maximum five players added');
+       
+    } else{
+        orderedListField.appendChild(li);
+        event.target.setAttribute('disabled',"true");
     }
 
 })
