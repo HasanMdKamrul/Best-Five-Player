@@ -10,8 +10,8 @@ document.getElementById('calculate-total').addEventListener('click',function(){
 
     // * Validation checking
 
-    if (isNaN(managerExpense) || isNaN(coachExpense) || managerExpense < 0 || coachExpense < 0) {
-        alert('Please enter a valid number as input')
+    if (isNaN(managerExpense) || isNaN(coachExpense) || isNaN(playersExpense) || managerExpense < 0 || coachExpense < 0 || playersExpense < 0) {
+        alert('Please enter a valid number as input or calculate your player expense first')
         return;
     }
 

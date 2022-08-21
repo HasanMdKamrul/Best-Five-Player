@@ -8,7 +8,7 @@ document.getElementById('section-wrapper').addEventListener('click', function(ev
     
     const isButton = event.target.nodeName;
 
-    if ( isButton !== 'BUTTON') {
+    if (isButton !== 'BUTTON') {
         return;
     };
 
