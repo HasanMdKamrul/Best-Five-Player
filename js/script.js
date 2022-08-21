@@ -77,6 +77,11 @@ document.getElementById('calculate-total').addEventListener('click',function(){
 
     // * Validation checking
 
+    if (isNaN(managerExpense) || isNaN(coachExpense) || managerExpense < 0 || coachExpense < 0) {
+        alert('Please enter a valid number as input')
+        return;
+    }
+
     // ** calculate total expense
     const totalExpense = playersExpense + managerExpense + coachExpense;
 
