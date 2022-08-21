@@ -25,12 +25,12 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./Images/bg-banner.jpeg"
-              class="d-block w-100"
+              src="./Images/psg-dark-football.jpg"
+              class="d-block w-100 img-fluid"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>
+            <div class="carousel-caption d-md-block">
+              <h1 class="text-light fw-bolder">
                 Choose your Top Five <span class="text-warning">Performer</span>
               </h1>
             </div>
@@ -43,12 +43,12 @@
     <main class="container">
       <section class="container my-5" >
         <div class="row">
-          <div class="col-lg-8" id="section-wrapper">
+          <div class="col-lg-8 col-md-6 col-12" id="section-wrapper">
             <!-- ** Player 1 -->
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12 gy-2">
                     <!-- ** Player 1 -->
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-dark text-light shadow-lg rounded">
                         <img
                           src="./Images/MessiFinal.jpg"
                           class="card-img-top img-fluid"
@@ -66,9 +66,9 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12 gy-2">
                     <!-- ** Player 2 -->
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-dark text-light shadow-lg rounded">
                         <img
                           src="./Images/neymar.jpg"
                           class="card-img-top img-fluid"
@@ -86,9 +86,9 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12  gy-2">
                     <!-- ** Player 3 -->
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-dark text-light shadow-lg rounded">
                         <img
                           src="./Images/mbappe.jpg"
                           class="card-img-top img-fluid"
@@ -108,9 +108,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12 gy-3">
                     <!-- ** Player 4 -->
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-dark text-light shadow-lg rounded">
                         <img
                           src="./Images/victor.jpg"
                           class="card-img-top img-fluid"
@@ -128,9 +128,9 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12 gy-3">
                     <!-- ** Player 5 -->
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-dark text-light shadow-lg rounded">
                         <img
                           src="./Images/ramos.jpg"
                           class="card-img-top img-fluid"
@@ -148,9 +148,9 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-12 gy-3">
                     <!-- ** Player 6 -->
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-dark text-light shadow-lg rounded">
                         <img
                           src="./Images/renato.jpg"
                           class="card-img-top img-fluid"
@@ -171,41 +171,42 @@
             </div>
            
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6 col-12">
             <!-- ** Player add ** -->
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="card bg-dark">
+                <div class="col-lg-12 col-12">
+                    <div class="card bg-dark shadow-lg rounded">
                         <div class="card-body">
                           <h2 class="card-title text-primary text-center">Pick your top 5</h2>
                         </div>
-                        <ol class="list-group text-center ms-5" id="ordered-list">
-                          
-                        </ol>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <ol class="list-group ms-5" id="ordered-list" style="height:80px">
+                          </ol>
+                        </div>
                       </div>
                 </div>
             </div>
             <!-- Budget -->
             <div class="row my-5">
-                <div class="col-lg-12">
-                    <div class="card bg-dark">
+                <div class="col-lg-12 col-12">
+                    <div class="card bg-dark shadow-lg rounded">
                         <div class="card-body">
                           <h2 class="card-title text-primary text-center">Budget</h2>
                         </div>
                         <div class="text-center">
-                            <p class="text-primary">Per Player  <input id="per-player-budget" type="text" placeholder="PerPlayer Budget"></p>
+                            <p class="text-primary">Per Player  <input id="per-player-budget" type="text" placeholder="Per Player Budget"></p>
                         </div>
                         <button id="calculate" type="button" class="btn btn-secondary btn-lg">Calculate</button>
-                        <h5 class="text-primary text-center mt-3">Player Expenses $<span id="player-expenses"></span> </h5>
+                        <h5 class="text-primary text-center mt-3">Player Expenses $<span id="player-expenses" class="text-warning"></span> </h5>
                         <div class="text-center">
-                            <p class="text-primary">Manager  <input id="manager-expense" type="text" placeholder="PerPlayer Budget"></p>
+                            <p class="text-primary">Manager  <input id="manager-expense" type="text" placeholder="Manager Expense"></p>
                         </div>
                         <div class="text-center">
-                            <p class="text-primary">Coach  <input id="coach-expense" type="text" placeholder="PerPlayer Budget"></p>
+                            <p class="text-primary">Coach  <input id="coach-expense" type="text" placeholder="Coach Expense"></p>
                         </div>
                         <button id="calculate-total" type="button" class="btn btn-secondary btn-lg">Calculate Total</button>
                       </div>
-                      <h5 class="text-primary text-center mt-3">Total $<span id="total"></span> </h5>
+                      <h5 class="text-primary text-center mt-3">Total $<span id="total" class="text-warning"></span> </h5>
                 </div>
             </div>
           </div>
