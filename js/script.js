@@ -1,7 +1,7 @@
 
 // ** Selection wrapper section
 
-document.getElementById('section-wrapper').addEventListener('click', function(event) {
+document.getElementById('wrapper').addEventListener('click', function(event) {
 
     // ** only button event captured
     const isButton = event.target.nodeName;
